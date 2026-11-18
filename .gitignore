@@ -1,0 +1,32 @@
+# Revit / Dynamo temp files
+*.rvt
+*.rfa
+*.rte
+*.rft
+*.bak
+*.dyn.bak
+*.dyn~
+
+# Sample model (project data, do not upload)
+sample_model/*
+!sample_model/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Generated reports with project data (uncomment if needed)
+# reports/*.csv
+
+# Keep screenshots folder
+!screenshots/.gitkeep

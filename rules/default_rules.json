@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "meta": {
+    "description": "机电/管综族命名规范 v1（示例），换企业规范只改本文件不改代码",
+    "separator_note": "合法分隔符；全角横杠、下划线、空格会被统一替换为本值"
+  },
+  "separator": "-",
+  "segments": [
+    {
+      "index": 0,
+      "name": "专业",
+      "required": true,
+      "type": "enum",
+      "allowed": ["机电", "给排水", "暖通", "电气", "土建"]
+    },
+    {
+      "index": 1,
+      "name": "类别",
+      "required": true,
+      "type": "enum",
+      "allowed": ["风管", "水管", "桥架", "管件", "阀门", "设备"]
+    },
+    {
+      "index": 2,
+      "name": "材质或形式",
+      "required": true,
+      "type": "enum",
+      "allowed": ["镀锌钢板", "不锈钢", "PVC", "铸铁", "矩形", "圆形"]
+    },
+    {
+      "index": 3,
+      "name": "细分",
+      "required": false,
+      "type": "any"
+    },
+    {
+      "index": 4,
+      "name": "规格",
+      "required": true,
+      "type": "regex",
+      "pattern": "^[0-9]+[xX×][0-9]+$|^DN[0-9]+$"
+    }
+  ],
+  "normalize": {
+    "fullwidth_to_halfwidth": true,
+    "trim_spaces": true,
+    "illegal_chars": ["(", ")", "（", "）", "副本", "新建"]
+  }
+}

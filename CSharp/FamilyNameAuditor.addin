@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>FNA - Audit (Read Only)</Name>
+    <Assembly>D:\FamilyNameAuditor\CSharp\FamilyNameAuditor\bin\Debug\FamilyNameAuditor.dll</Assembly>
+    <AddInId>{A1B2C3D4-1111-4E5F-8A9B-000000000001}</AddInId>
+    <FullClassName>FamilyNameAuditor.Commands.AuditFamiliesCommand</FullClassName>
+    <VendorId>TANXU</VendorId>
+    <VendorDescription>BIM Automation Portfolio</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Name>FNA - Apply Rename</Name>
+    <Assembly>D:\FamilyNameAuditor\CSharp\FamilyNameAuditor\bin\Debug\FamilyNameAuditor.dll</Assembly>
+    <AddInId>{A1B2C3D4-1111-4E5F-8A9B-000000000002}</AddInId>
+    <FullClassName>FamilyNameAuditor.Commands.RenameFamiliesCommand</FullClassName>
+    <VendorId>TANXU</VendorId>
+    <VendorDescription>BIM Automation Portfolio</VendorDescription>
+  </AddIn>
+</RevitAddIns>
